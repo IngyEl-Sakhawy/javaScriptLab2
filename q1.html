@@ -17,7 +17,10 @@
         break;
     }
     let age = parseInt(userInput);
-
+    if (age < 0) {
+        alert("Please enter a non-negative number.");
+        continue; 
+    }
     if (age >= 1 && age <= 10) {
         alert("Child");
     } else if (age >= 11 && age <= 18) {
