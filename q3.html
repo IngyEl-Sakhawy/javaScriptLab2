@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Hour</title>
+    
+</head>
+<body>
+    
+
+    <script>
+    function convertHour(hour) {
+    if (hour === 0) {
+        return "12AM";
+    } else if (hour >= 1 && hour <= 11) {
+        return hour + "AM";
+    } else if (hour === 12) {
+        return "12PM";
+    } else if (hour >= 13 && hour <= 23) {
+        return (hour - 12) + "PM";
+    } else {
+        return "Invalid input";
+    }
+    }
+    let userHour = prompt("Enter The Hour:");
+    let Hour = convertHour(userHour);
+    alert("The Hour is = " + Hour);   
+    </script>
+</body>
+</html>

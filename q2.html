@@ -12,14 +12,14 @@
     <script>
 let userString = prompt("Enter a string:");
 function countVowels(str) {
-    let vowelCount = (str.match(/[aeiou]/gi) || []).length;
-    return vowelCount;
+    let Count = (str.match(/[aeiou]/gi) || []).length;
+    return Count;
 }
 
-let numberOfVowels = countVowels(userString);
+let countValue = countVowels(userString);
 
 
-alert("Number of vowels = " + numberOfVowels);
+alert("Number of vowels = " + countValue);
         
     </script>
 </body>
