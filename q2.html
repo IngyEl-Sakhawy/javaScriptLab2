@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowels</title>
+    
+</head>
+<body>
+    
+
+    <script>
+let userString = prompt("Enter a string:");
+function countVowels(str) {
+    let vowelCount = (str.match(/[aeiou]/gi) || []).length;
+    return vowelCount;
+}
+
+let numberOfVowels = countVowels(userString);
+
+
+alert("Number of vowels = " + numberOfVowels);
+        
+    </script>
+</body>
+</html>
